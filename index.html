@@ -623,7 +623,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form onsubmit="return ValidateForm()" action="forms/contact.php" method="post" name="form " class="php-email-form" novalidate>
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -642,7 +642,7 @@
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
@@ -677,10 +677,10 @@
                     </div>
                     <div class="socials">
                       <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook" style="vertical-align: middle;"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram" style="vertical-align: middle;"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter" style="vertical-align: middle;"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin" style="vertical-align: middle;"></i></span></a></li>
+                        <li><a href="https://www.facebook.com/"><span class="ico-circle"><i class="bi bi-facebook" style="vertical-align: middle;"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/"><span class="ico-circle"><i class="bi bi-instagram" style="vertical-align: middle;"></i></span></a></li>
+                        <li><a href="https://twitter.com/home?lang=en"><span class="ico-circle"><i class="bi bi-twitter" style="vertical-align: middle;"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/anilkumar-tb-383935183/"><span class="ico-circle"><i class="bi bi-linkedin" style="vertical-align: middle;"></i></span></a></li>
                       </ul>
                     </div>
                   </div>
@@ -729,6 +729,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="base.js"></script>
 
 </body>
 
